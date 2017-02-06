@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1666487950">
+    <data-source source="LOCAL" name="Rails grabber: development" uuid="2b28a1de-de66-4c56-b00e-d6c3e519a8de">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/grabber_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails grabber: test" uuid="3c4fd6cc-b10d-4cdc-b3dc-31ce170d9316">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/grabber_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails grabber: production" uuid="d3be3d2a-4fbd-4f74-a8ff-15fb93a9f886">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/grabber_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

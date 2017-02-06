@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails grabber: development" uuid="2b28a1de-de66-4c56-b00e-d6c3e519a8de">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails grabber: test" uuid="3c4fd6cc-b10d-4cdc-b3dc-31ce170d9316">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails grabber: production" uuid="d3be3d2a-4fbd-4f74-a8ff-15fb93a9f886">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

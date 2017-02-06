@@ -1,0 +1,10 @@
+<% @letters.each do|letter|%>
+  <tr>
+    <td><%=letter.account_id%> </td>
+    <td><%= letter.text%></td>
+    <td><%= letter.date%></td>
+    <td><%= check_box_tag '', '', letter.is_read , disabled: true%></td>
+    <td><%= letter.files_count%></td>
+    <td><%= letter.timestamp%></td>
+  </tr>
+<%end%>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyText
+  date: 2017-01-27
+  isRead: false
+  filesCount: 1
+  account: one
+
+two:
+  text: MyText
+  date: 2017-01-27
+  isRead: false
+  filesCount: 1
+  account: two
