@@ -15,7 +15,7 @@
      <th > </th>
      <th>   <%=date_field_tag('start_date',Time.now, form: "searchform")  %> <br>
        <%= date_field_tag('end_date', Time.now, form: "searchform") %>  </th>
-     <th  ><%= select_tag  "is_read", options_for_select([["Все","all"],["Прочитанные","read"], ["Непрочитанные","unread"]]), form: "searchform" %> </th>
+     <th  ><%= select_tag  "is_read", options_for_select([["Все","all"],["Прочитанные","true"], ["Непрочитанные","false"]]), form: "searchform" %> </th>
      <th ><%=text_field_tag("files_count",'', form: "searchform")%></th>
      <th > </th>
      <th > <%=submit_tag("Фильтр", id: "searchButton",class:"btn btn-primary", form: "searchform") %><br>

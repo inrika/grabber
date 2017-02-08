@@ -1,5 +1,4 @@
 class LettersController < ApplicationController
-    include Filter
 
   def index
     if params[:start_date]||params[:end_date]||params[:files_count]||params[:is_read]
@@ -20,22 +19,41 @@ class LettersController < ApplicationController
     end
   end
 
+  def filtered_letters
+    @filter_hash ={}
+    @filter_str = ''
+
+    set_filter_is_read( 'is_read=', 'is_read')
+    set_filter( 'date>=', 'start_date')
+    set_filter( 'date<=', 'end_date')
+    set_filter( 'files_count=', 'files_count')
+
+    if @filter_str.blank?
+      Letter.all
+    else
+       Letter.where(@filter_str, @filter_hash)
+    end
+  end
+
   private
 
-    def filtered_letters
-      @filter_hash ={}
-      @filter_str = ''
-
-      set_filter_is_read
-      set_filter_start_date
-      set_filter_end_date
-      set_filter_files_count
-
-      if @filter_str.blank?
-        Letter.all
-      else
-         Letter.where(@filter_str, @filter_hash)
+    def set_filter(comparison, param_name)
+      unless params[param_name].blank?
+        @filter_hash[param_name.to_sym]= params[param_name]
+        @filter_str<<" And " unless @filter_str.blank?
+        @filter_str<< comparison<<':'<<param_name
       end
-   end
+    end
+
+
+    def set_filter_is_read(comparison, param_name)
+      unless params[param_name] =="all"
+        @filter_str<<" And " unless @filter_str.blank?
+        @filter_str<< comparison<<params[param_name]
+      end
+    end
+
+
+
 
 end
