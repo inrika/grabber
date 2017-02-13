@@ -1,10 +1,13 @@
 <%=link_to 'К письмам', letters_path, class: "btn btn-default"%>
 <h1> Ручное копирование входящих писем</h1>
 <%=form_for @account do |f|%>
-  <%= f.email_field :email %>
-  <%=f.text_field :password %>
-  <%= date_field_tag :startDate %>
-  <%=date_field_tag :endDate %>
+<%=f.label:email, "Аккаунт"%>
+<%= f.email_field :email %>
+<%=f.label:password, "Пароль"%>
+<%=f.text_field :password %>
+<%=f.label:startDat, "Период"%>
+<%= date_field_tag :startDate %>
+<%=date_field_tag :endDate %>
 
-  <%=f.submit%>
+  <%=f.submit "Копировать письма"%>
 <%end%>

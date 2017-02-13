@@ -6,7 +6,7 @@ class Object
 end
 class Account < ApplicationRecord
   has_many :letters
-
+  #has_secure_password
   def create_letters(gmail,startDate,endDate)
     current_date = Time.now
     gmail.inbox.emails( :after => startDate,:before => endDate).each do |email|
