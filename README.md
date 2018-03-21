@@ -34,3 +34,5 @@
     База данных: postgresql >= 9.0
     Ruby on Rails >= 4.0
     ruby > 2.1
+
+https://grabbertest.herokuapp.com/
